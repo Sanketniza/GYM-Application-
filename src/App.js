@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import Footer from "./Components/Footer";
+import Pricing from "./Components/Pricing";
+import WorkoutSessions from "./Components/WorkoutSessions";
+import BMICalculator from "./Components/BMICalculator";
+import Gallery from "./Components/Gallery";
+import Contact from "./Components/Contact"; // Correct import for a named export
+import Navbar from "./Components/Navbar";
+
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        {/* <Hero/> */}
+        <WorkoutSessions />
+        {/* <Gallery/> */}
+        <Pricing />
+        <Contact />
+        <BMICalculator />
+        <Footer />
+
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss={false}
+          draggable={false}
+          pauseOnHover={false}
+          theme="colored"
+        />
+      </Router>
+    </>
   );
 }
 
