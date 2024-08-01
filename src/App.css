@@ -604,16 +604,33 @@ margin-top: 150px;
   background: transparent;
 }
 
-
-.bmi .container-bmi .bmi-form form div input,
-.bmi .container-bmi .bmi-form form div select {
-  padding: 7px 4px;
-  font-size: 22px;
+.bmi .gender{
+  outline: none;
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
-  color: antiquewhite;
+  color: #fff;
+  font-size: 22px;
+  padding: 7px 4px;
+  margin-top: 10px;
+  gap: 20px;
 }
+
+.bmi .gender form div option {
+  color: #111;
+}
+.bmi .gender form div input:focus,
+.bmi .gender form div select:focus {
+  outline: none;
+}
+
+.bmi .gender section option {
+  padding: 7px 4px;
+  font-size: 22px;
+  border: none;
+  background: transparent;
+}
+
 
 
 .bmi-img img {
@@ -644,4 +661,23 @@ margin-top: 150px;
 .bmi{
   justify-content: center;
  
+}
+
+
+/* * --------------------footer --------------------------------- */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  width: 100%;
+  background: #111;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer p {
+  color: #0095ff;
+  font-size: 1.5rem;
 }

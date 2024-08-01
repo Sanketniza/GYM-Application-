@@ -5,8 +5,9 @@ function Footer() {
     
      <>
      <div className="footer">
-       <p>Copyright © 2022. All rights reserDSF DSFDSFADSFved.</p>
-     </div>
+       <p>Copyright © 2022. All rights Designed And Developed By CodeWithZeeshu
+       .</p>
+     </div> 
 
         <div>
            
@@ -15,4 +16,5 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;
+
